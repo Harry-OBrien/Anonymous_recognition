@@ -1,9 +1,5 @@
-import 'dart:wasm';
-
 import 'package:flutter/material.dart';
 import 'package:manager/models/section.dart';
-
-import 'main_menu_items.dart';
 
 class MainMenuItem extends StatelessWidget {
   const MainMenuItem({

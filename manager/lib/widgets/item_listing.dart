@@ -1,5 +1,6 @@
 import 'package:manager/models/section.dart';
 import 'package:flutter/material.dart';
+import 'package:manager/widgets/background_video.dart';
 import 'package:manager/widgets/main_menu_items.dart';
 import 'package:meta/meta.dart';
 
@@ -9,13 +10,24 @@ class ItemListing extends StatelessWidget {
   ItemListing({
     @required this.itemSelectedCallback,
     this.selectedSectionIndex,
+    @required this.isInTabletLayout,
   });
 
   final ValueChanged<int> itemSelectedCallback;
   final int selectedSectionIndex;
+  final bool isInTabletLayout;
 
   @override
   Widget build(BuildContext context) {
+    if (!isInTabletLayout)
+      return BackgroundVideo(
+        child: buildContent(context),
+      );
+    else
+      return buildContent(context);
+  }
+
+  Widget buildContent(BuildContext context) {
     return Container(
       color: Theme.of(context).primaryColor,
       constraints: BoxConstraints.expand(),

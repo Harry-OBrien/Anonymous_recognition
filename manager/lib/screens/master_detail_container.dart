@@ -32,6 +32,7 @@ class _ItemMasterDetailContainerState extends State<MasterDetailContainer> {
           ),
         );
       },
+      isInTabletLayout: true,
     );
   }
 
@@ -51,6 +52,7 @@ class _ItemMasterDetailContainerState extends State<MasterDetailContainer> {
                   });
                 },
                 selectedSectionIndex: _selectedItemIndex,
+                isInTabletLayout: true,
               ),
             ),
           ),

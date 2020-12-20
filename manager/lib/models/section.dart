@@ -1,5 +1,5 @@
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:manager/screens/Admin_screen.dart';
+import 'package:manager/screens/admin_screen.dart';
 import 'package:manager/screens/account_screen.dart';
 import 'package:manager/screens/customer_analytics_screen.dart';
 import 'package:manager/screens/life_cycle_screen.dart';
